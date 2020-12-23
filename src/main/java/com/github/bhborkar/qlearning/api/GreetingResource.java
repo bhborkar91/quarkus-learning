@@ -6,7 +6,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import com.github.bhborkar.qlearning.config.Configuration;
+import com.github.bhborkar.qlearning.service.GreetingService;
 
 @Path("/hello")
 public class GreetingResource {

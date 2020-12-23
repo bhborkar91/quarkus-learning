@@ -1,4 +1,4 @@
-package com.github.bhborkar.qlearning.api;
+package com.github.bhborkar.qlearning.service;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;

@@ -30,6 +30,14 @@ mvn clean verify
 
 Jacoco reports are available in `/target/site`
 
+## Add datasource
+
+```
+
+mvn quarkus:add-extension -Dextensions="hibernate-orm-panache, jdbc-h2, jdbc-postgresql, resteasy-jsonb"
+
+```
+
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
