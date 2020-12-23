@@ -16,6 +16,20 @@ This project was generated using the command below (initially):
      -Dpath="/hello"
 ```
 
+## Running unit tests
+
+```
+mvn clean test
+```
+
+## Running unit tests and generating coverage
+
+```
+mvn clean verify
+```
+
+Jacoco reports are available in `/target/site`
+
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
@@ -41,12 +55,12 @@ The application is now runnable using `java -jar target/quarkus-learning-1.0.0-S
 
 ## Creating a native executable
 
-You can create a native executable using: 
+You can create a native executable using:
 ```shell script
 ./mvnw package -Pnative
 ```
 
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using: 
+Or, if you don't have GraalVM installed, you can run the native executable build in a container using:
 ```shell script
 ./mvnw package -Pnative -Dquarkus.native.container-build=true
 ```
