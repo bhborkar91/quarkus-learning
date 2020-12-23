@@ -12,11 +12,13 @@ import com.github.bhborkar.qlearning.config.Configuration;
 public class GreetingResource {
 
 	@Inject
-	Configuration config;
+	GreetingService service;
 	
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return "Hello from " + config.getHelloString();
+       return service.greet();
     }
+    
+    
 }
